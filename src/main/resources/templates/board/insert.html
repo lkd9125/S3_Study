@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko" layout:decorate="~{layout/layout}">
+
+    <div layout:fragment="content">
+        <form action="/board/insert" method="post" enctype="multipart/form-data">
+            <input type="file" name="awss3" />
+            <input type="text" name="username" />
+            <button type="submit">업로드</button>
+        </form>
+
+        <button onclick="location.href='/board/list'">뒤로가기</button>
+    </div>
+</html>
