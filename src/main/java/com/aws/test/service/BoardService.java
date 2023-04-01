@@ -31,6 +31,8 @@ public class BoardService {
     public ArrayList<BoardVO> getList() {
         log.info("BoardService - getList()");
         
+        
+        
         return boardDao.getList();
     }
 
@@ -38,6 +40,7 @@ public class BoardService {
         String oriName = vo.getAwss3().getOriginalFilename();
 
         if(mimeCheck(Files.probeContentType(Paths.get(oriName)))) return;
+        
         String sysname = System.currentTimeMillis() + oriName.substring(oriName.lastIndexOf("."));
 
         File file = new File(sysname);

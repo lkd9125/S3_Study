@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.aws</groupId>
-	<artifactId>test</artifactId>
+	<artifactId>study</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>test</name>
 	<description>Demo project for Spring Boot</description>
